@@ -1,15 +1,11 @@
-
-
 var clientes = new Promise((resolve, reject) => { resolve("clientes") })
 var departamentos = new Promise((resolve, reject) => { resolve("deptos") })
 var equipes = new Promise((resolve, reject) => { resolve("equipes") })
-var teste = new Promise((resolve, reject) => { reject("teste") })
-
+var teste = new Promise((resolve, reject) => { resolve("teste") })
 
 Promise.all([clientes, departamentos, equipes, teste]).then( (values) => {
-    console.log("Resultados");
-    console.log(values);
-}).catch((erro) => {
+    console.log("Resultados:", values);
+}).catch((erro) => {    
     console.error("ERRO", erro)
 })
 

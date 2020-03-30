@@ -3,7 +3,6 @@ console.log("Inicio");
 var erro ;
 //erro = true;
 
-
 var leituraClientes = new Promise((resolve, reject) => {
 
     console.log("L01: Buscando clientes");
